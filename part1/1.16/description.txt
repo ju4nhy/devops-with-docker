@@ -1,0 +1,16 @@
+1. Creating Dockerfile
+
+2. Login
+$ docker login
+
+3. Building
+$ docker build . -t weatherapp
+
+4. Testing it works
+$ docker run -p 3000:3000 -e REACT_APP_API_KEY=my_api_key weatherapp
+
+5. Tagging
+$ docker tag weatherapp ju4nhy/weatherapp
+
+6. Pushing
+$ docker push ju4nhy/weatherapp
