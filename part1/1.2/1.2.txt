@@ -1,0 +1,29 @@
+At start:
+
+PS C:\Users\ju4nh> docker container ls -a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                        PORTS     NAMES
+1b161d7f4e21   nginx     "/docker-entrypoint.…"   18 hours ago   Exited (255) 10 minutes ago   80/tcp    hopeful_williams
+28686d6ab882   nginx     "/docker-entrypoint.…"   18 hours ago   Exited (0) 18 hours ago                 compassionate_euler
+6086a50b5c5d   nginx     "/docker-entrypoint.…"   18 hours ago   Exited (0) 18 hours ago                 crazy_pike
+
+PS C:\Users\ju4nh> docker images
+
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+nginx                               latest    eea7b3dcba7e   7 days ago    187MB
+ubuntu                              latest    01f29b872827   2 weeks ago   77.8MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
+devopsdockeruh/pull_exercise        latest    d9854bc0e13a   4 years ago   75.3MB
+
+docker container rm 1b 28 60
+docker image rm ee 01 4e fd d9
+
+PS C:\Users\ju4nh> docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS C:\Users\ju4nh>
+
+$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+Could have used also docker system prune

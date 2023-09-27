@@ -1,0 +1,27 @@
+1. Did not work with windows powercell
+
+$ docker run -it ubuntu sh -c "while true; do echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website; done" 
+$ docker container ls -a 
+$ docker exec -it jovial_feistel bash
+$ apt-get update
+$ apt-get -y install curl
+
+Error:
+(curl: (3) URL using bad/illegal format or missing URL)
+
+
+2. Works with git bash but only with 'while true do' excluded:
+
+$ winpty docker run -it ubuntu sh -c echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website;
+
+helsinki.fi
+Searching..
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   169  100   169    0     0   2532      0 --:--:-- --:--:-- --:--:--  2600<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>

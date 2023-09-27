@@ -1,0 +1,7 @@
+EXERCISE 1.8: TWO LINE DOCKERFILE
+Return the Dockerfile and the command you used to run the container.
+
+COMMANDS:
+
+$ docker build . -t web-server
+$ winpty docker run web-server
