@@ -1,0 +1,13 @@
+$ docker-compose up
+Creating network "part2_default" with the default driver
+Creating part2_simple-web-service_1 ...
+Creating part2_simple-web-service_1 ... done
+Attaching to part2_simple-web-service_1
+simple-web-service_1  | Starting log output
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+simple-web-service_1  | Wrote text to /usr/src/app/text.log
+Stopping part2_simple-web-service_1 ...
+Stopping part2_simple-web-service_1 ... done
+Gracefully stopping... (press Ctrl+C again to force)

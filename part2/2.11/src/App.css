@@ -1,0 +1,17 @@
+.font-custom {
+  font-family: 'Darumadrop One', sans-serif;
+}
+
+.font-custom:hover {
+  color: #F48037;
+  font-size: 22px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-orange-500 {
+  scrollbar-color: #F48037 #484848;
+}

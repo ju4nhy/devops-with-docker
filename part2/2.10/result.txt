@@ -1,0 +1,36 @@
+USED COMMAND:
+
+$ docker compose up --build
+
+AT START:
+
+$ docker run -it --rm --network host networkstatic/nmap localhost
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-09-21 11:03 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000050s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE    SERVICE
+80/tcp   filtered http
+111/tcp  open     rpcbind
+5000/tcp filtered upnp
+8080/tcp filtered http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 1.39 seconds
+
+
+THE RESULT:
+
+$ docker run -it --rm --network host networkstatic/nmap localhost
+
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-09-21 11:07 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000050s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 998 closed tcp ports (reset)
+PORT    STATE    SERVICE
+80/tcp  filtered http
+111/tcp open     rpcbind
+
+Nmap done: 1 IP address (1 host up) scanned in 1.40 seconds
